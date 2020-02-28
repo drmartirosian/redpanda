@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
         .catch(err => res.status(400).json(`Error: ${err}`))
 });
 
-//ADD NEW ARTICLE REQUEST
+//ADD ARTICLE REQUEST
 router.post("/add", (req, res) => {
     const newArticle = new Articles({
         title: req.body.title,
@@ -27,7 +27,7 @@ router.get('/:id', (req, res) => {
     .catch(err => res.status(400).json(`Error: ${err}`))
 });
 
-//FIND ARTICLE BY ID AND UPDATE
+//UPDATE ARTICLE BY ID
 router.put('/update/:id', (req, res) => {
     Articles.findById(req.params.id)
     .then(article => {
@@ -40,9 +40,11 @@ router.put('/update/:id', (req, res) => {
             .then(()=> res.json("Article updated!"))
             .catch(err => res.status(400).json(`Error: ${err}`))
     })
+    //one here too just in case...
     .catch(err => res.status(400).json(`Error: ${err}`))
 })
-//FIND ARTICLE BY ID AND DELETE
+
+//DELETE ARTICLE BY ID
 router.delete('/:id', (req, res)=>{
     Articles.findByIdAndDelete(req.params.id)
     .then(()=>res.json("Article deleted!!!!"))
