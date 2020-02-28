@@ -2,9 +2,9 @@ import React from 'react';
 
 const Articles = ({ posts }) => {
     return (
-        <div>
+        <div style={{marginTop:"400px"}} >
             {posts.map( (article, key) => (
-            <h1 style={{fontSize:"50px", marginTop:"400px"}} >{article.title}</h1>
+            <p >{article.title}</p>
             ))}
         </div>
     )
