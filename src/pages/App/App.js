@@ -4,9 +4,9 @@ import SignupPage from '../SignupPage/SignupPage';
 import LoginPage from '../LoginPage/LoginPage';
 import userService from '../../utils/userService';
 import HomePage from '../HomePage/HomePage';
-import NavBar from '../../components/NavBar/NavBar';
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
+// import NavBar from '../../components/NavBar/NavBar';
+// import Header from '../../components/Header'
+// import Footer from '../../components/Footer'
 import './App.css';
 
 class App extends Component {

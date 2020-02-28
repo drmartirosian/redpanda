@@ -3,7 +3,7 @@
     --darkGreen: #277;
 }
 * {
-    font-family: 'Jura', ;
+    font-family: "Jura", Times, serif !important;
     margin: 0;
     padding: 0;
     box-sizing: border-box;

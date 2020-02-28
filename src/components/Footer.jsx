@@ -16,9 +16,11 @@ export default Footer
 const MainContainer = styled.footer`
     background-color: #344;
     color: white;
-    height: 4rem;
+    height: 5rem;
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
+    padding: 10px;
+    font-size: 25px;
 `;
