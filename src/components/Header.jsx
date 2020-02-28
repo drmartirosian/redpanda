@@ -14,6 +14,7 @@ const MainContainer = styled.header`
     background: url(../../img/header.png) no-repeat center/cover;
     height: 25rem;
     width: 100%;
+
     h1{
         transform: translate(-50%, -50%);
         font-weight: 900;
@@ -23,5 +24,8 @@ const MainContainer = styled.header`
         left: 50%;
     }
 
+    position: fixed;
+    left: 0;
+    top: 0;
 
 `;
